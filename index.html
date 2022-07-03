@@ -23,6 +23,20 @@
             @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Jua&display=swap');
         </style>
         <script src="https://kit.fontawesome.com/e279496dd3.js" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('naver').addEventListener('click', function() {
+                    window.open('https://cafe.naver.com/everyonesgame');
+                });
+                document.getElementById('kakaotalk').addEventListener('click', function() {
+                    window.open('https://open.kakao.com/o/gI7NY8je');
+                });
+                document.getElementById('discord').addEventListener('click', function() {
+                    window.open('https://discord.gg/NTM3usbGFk');
+                });
+            });
+        </script>
+      
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -32,7 +46,7 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">인사말</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">규칙안내</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services2">디스코드 카톡 안내</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">초대 링크</a></li>
@@ -68,7 +82,7 @@
                         <h2 class="text-white mt-0">종합게임방 '모두의 종합게임'입니다</h2>
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">저희는 여러가지 게임을 같이 하기위해서 만들어졌습니다.<br>같이 즐겁게 게임하실분들 들어오세요!!<br>#종합게임 #성인  #디스코드 #카카오톡 #GTA #배틀그라운드 #오버위치 #리그오브레전드 #스팀</p>
-                        <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+                        <a class="btn btn-light btn-xl" href="#services">시작!</a>
                     </div>
                 </div>
             </div>
@@ -162,7 +176,7 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="https://discord.gg/NTM3usbGFk" title="Project Name">
+                        <a class="portfolio-box" href="https://discord.gg/NTM3usbGFk" title="Project Name" id="discord">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/12.jpg" alt="..."/>                    
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">링크</div>
@@ -171,7 +185,7 @@
                         </a>                        
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="https://open.kakao.com/o/gI7NY8je" title="Project Name">
+                        <a class="portfolio-box" href="https://open.kakao.com/o/gI7NY8je" title="Project Name" target="_blank" id="kakaotalk">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/22.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">링크</div>
@@ -179,12 +193,14 @@
                             </div>
                         </a>
                     </div>
+
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="https://cafe.naver.com/everyonesgame" title="Project Name">
+                        <a class="portfolio-box" href="javascript:void(0)"; title="Project Name" target="_blank" id="naver">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/33.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">링크</div>
                                 <div class="project-name">네이버 카페</div>
+                                
                             </div>
                         </a>
                     </div>
